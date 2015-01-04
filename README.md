@@ -41,32 +41,32 @@ source](https://nifi.incubator.apache.org/development/quickstart.html).
 Assuming you used "example" as your artifactId in step 5, this archetype will generate a project with 
 the following structure:
 
-> example
-> ├── example-nar
-> │   ├── pom.xml
-> │   
-> ├── example-processors
-> │   ├── pom.xml
-> │   ├── src
-> │      ├── main
-> │      │   ├── java
-> │      │   │   └── org
-> │      │   │       └── apache
-> │      │   │           └── nifi
-> │      │   │               └── processors
-> │      │   │                   └── MyProcessor.java
-> │      │   └── resources
-> │      │       └── META-INF
-> │      │           └── services
-> │      │               └── org.apache.nifi.processor.Processor
-> │      └── test
-> │          └── java
-> │              └── org
-> │                  └── apache
-> │                      └── nifi
-> │                          └── processors
-> │                              └── MyProcessorTest.java
-> ├── pom.xml
+    example
+    ├── example-nar
+    │   ├── pom.xml
+    │   
+    ├── example-processors
+    │   ├── pom.xml
+    │   ├── src
+    │      ├── main
+    │      │   ├── java
+    │      │   │   └── org
+    │      │   │       └── apache
+    │      │   │           └── nifi
+    │      │   │               └── processors
+    │      │   │                   └── MyProcessor.java
+    │      │   └── resources
+    │      │       └── META-INF
+    │      │           └── services
+    │      │               └── org.apache.nifi.processor.Processor
+    │      └── test
+    │          └── java
+    │              └── org
+    │                  └── apache
+    │                      └── nifi
+    │                          └── processors
+    │                              └── MyProcessorTest.java
+    ├── pom.xml
 
 * example-processors 
     
