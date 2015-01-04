@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="${artifactId}-bundle">
+  <requiredProperties>
+        <requiredProperty key="nifiVersion" >
+        <defaultValue>0.0.1-SNAPSHOT</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+  <modules>
+    <module id="${rootArtifactId}-processors" dir="__rootArtifactId__-processors" name="${rootArtifactId}-processors">
+      <fileSets>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.Processor</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-nar" dir="__rootArtifactId__-nar" name="${rootArtifactId}-nar">
+      <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>
