@@ -1,7 +1,7 @@
 nifi-processor-bundle-archetype
 =================
 
-This project contains a Maven archetype that helps with creating a new project to develop
+This project contains a Maven archetype for creating new projects to develop
 custom processors for the Apache NiFi project.
 
 ## Usage
@@ -78,3 +78,9 @@ the following structure:
     This project is responsible for creating the nar that will be deployed to nifi. After running a build 
     you can copy example-nar/target/example-nar-1.0.nar to $NIFI_HOME/lib and restart NiFi. Any processors 
     you developed should then be available when adding a new processor to the flow.
+    
+## Sources
+
+http://maven.apache.org/archetype/archetype-common/archetype-descriptor.html
+http://gsmsengupta.blogspot.com/2014/01/creating-archetype-for-multi-project.html
+http://www.javacodegeeks.com/2012/02/maven-archetype-creation-tips.html
