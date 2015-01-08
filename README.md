@@ -55,10 +55,13 @@ the following structure:
     │      │   │           └── nifi
     │      │   │               └── processors
     │      │   │                   └── MyProcessor.java
-    │      │   └── resources
-    │      │       └── META-INF
-    │      │           └── services
-    │      │               └── org.apache.nifi.processor.Processor
+    │      │   └── resources
+    │      │              ├── META-INF
+    │      │              │   └── services
+    │      │              │       └── org.apache.nifi.processor.Processor
+    │      │              └── docs
+    │      │                  └── org.apache.nifi.processors.MyProcessor
+    │      │                      └── index.html
     │      └── test
     │          └── java
     │              └── org
