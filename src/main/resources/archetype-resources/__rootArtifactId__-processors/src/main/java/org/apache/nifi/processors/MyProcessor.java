@@ -1,6 +1,7 @@
 package org.apache.nifi.processors;
 
 import org.apache.nifi.components.PropertyDescriptor;
+import org.apache.nifi.components.PropertyValue;
 import org.apache.nifi.processor.*;
 import org.apache.nifi.processor.annotation.CapabilityDescription;
 import org.apache.nifi.processor.annotation.OnScheduled;
@@ -27,9 +28,8 @@ public class MyProcessor extends AbstractProcessor {
             .build();
 
     private List<PropertyDescriptor> descriptors;
-    private Set<Relationship> relationships;
 
-    private String myProperty;
+    private Set<Relationship> relationships;
 
     @Override
     protected void init(ProcessorInitializationContext context) {
@@ -54,11 +54,12 @@ public class MyProcessor extends AbstractProcessor {
 
     @OnScheduled
     public void onScheduled(final ProcessContext context) {
-        this.myProperty = context.getProperty(MY_PROPERTY).getValue();
+
     }
 
     @Override
-    public void onTrigger(ProcessContext processContext, ProcessSession processSession) throws ProcessException {
+    public void onTrigger(ProcessContext context, ProcessSession session) throws ProcessException {
+        PropertyValue propertyValue = context.getProperty(MY_PROPERTY);
         // TODO implement
     }
 
