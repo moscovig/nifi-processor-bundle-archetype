@@ -1,3 +1,6 @@
+NOTE: As of 1/23/2015 this archetype has been contribued to Apache NiFi, please see this location for the latest archetype:
+https://github.com/apache/incubator-nifi/tree/develop/nifi/nifi-maven-archetypes/nifi-processor-bundle-archetype
+
 nifi-processor-bundle-archetype
 =================
 
